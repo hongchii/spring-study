@@ -12,14 +12,14 @@ import org.springframework.web.servlet.ModelAndView;
 
 //년월일을 입력하면 요일을 알려주는 프로그램
 @Controller
-public class YoilTellerMVC {
+public class YoilTellerMVC2 {
 	@ExceptionHandler(Exception.class)
 	public String catcher(Exception ex) {
 		ex.printStackTrace();
 		return "yoilError";
 	}
 
-	@RequestMapping("/getYoilMVC")
+	@RequestMapping("/getYoilMVC2")
 //	public void main(HttpServletRequest request, HttpServletResponse response) throws IOException {
 	public String main(@RequestParam(required=true) int year, 
 			@RequestParam(required=true) int month, 
@@ -42,7 +42,7 @@ public class YoilTellerMVC {
 	}
 
 	// ModelAndView - 잘 사용하지 않음. 
-	@RequestMapping("/getYoilMVC7")
+	@RequestMapping("/getYoilMVC3")
 	public ModelAndView main(int year, int month, int day) throws IOException {
 		// 1. ModelAndView를 생성하고, 기본 뷰를 지정
 		ModelAndView mv = new ModelAndView();
