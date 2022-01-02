@@ -24,13 +24,13 @@ public class RegisterController {
 			String msg = URLEncoder.encode("id를 잘못입력하셨습니다.", "utf-8");
 
 			m.addAttribute("msg", msg);
-			return "redirect:/register/add"; // URL재작성(rewriting)
+			return "forward:/register/add"; // URL재작성(rewriting)
 //			return "redirect:/register/add?msg=" + msg; // URL재작성(rewriting)
 		}
 		return "registerInfo";
 	}
 
 	private boolean isValid(User user) {
-		return true;
+		return false;
 	}
 }
