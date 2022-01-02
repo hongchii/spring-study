@@ -11,8 +11,10 @@ public class RegisterController {
 //  @RequestMapping(value = "register/save", method ={RequestMethod.GET, RequestMethod.POST})	
 //	@RequestMapping("register/add") // 신규회원 가입 화면
 	/*
-	 * @GetMapping("register/add") public String register() { return "registerForm";
-	 * }
+	  @GetMapping("register/add") 
+	  public String register() { 
+	  return "registerForm";
+	  }
 	 */
 //	@RequestMapping(value = "register/save", method = RequestMethod.POST)
 	@PostMapping("/register/save") // 4.3부터
